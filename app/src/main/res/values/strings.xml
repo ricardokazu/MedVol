@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">MedVol</string>
+    <string name="Login_to_Register_Text">I don\'t have an account.</string>
+    <string name="Login_text">Login</string>
+    <string name="email_text">Email</string>
+    <string name="password_text">Password</string>
+    <string name="login_forgot_password">Forgot Password?</string>
+    <string name="confirm_password_text">Confirm Password</string>
+    <string name="register_text">Register</string>
+
+
+    <string name="trash_text">Wow, such empty!</string>
+    <string name="List_text">List of devices</string>
+    <string name="edit_text">Edit</string>
+    <string name="sign_out_text">Sign Out</string>
+    <string name="name_text">Name</string>
+    <string name="identification_text">Identification</string>
+    <string name="id_text">ID</string>
+    <string name="device_text">Device</string>
+    <string name="next_text">Next</string>
+    <string name="access_code_text">Access Code</string>
+    <string name="normal_id_text">Normal ID</string>
+    <string name="normal_device_text">Normal Device</string>
+    <string name="remove_text">Remove Item</string>
+    <string name="add_text">Add a New Item</string>
+    <string name="edit_menu_text">Edit Menu</string>
+    <string name="reorder_text">Reorder List</string>
+    <string name="graph_text">Graph</string>
+    <string name="tare_text">Tare</string>
+    <string name="calibrate">Calibrate</string>
+    <string name="number_1">1</string>
+    <string name="graph_text_1">Last Rate Measured</string>
+    <string name="graph_text_2">Last Mass Measured</string>
+    <string name="remove">Remove</string>
+    <string name="edit_devices">Edit Devices</string>
+    <string name="general_info">General Info</string>
+    <string name="credits">Credits</string>
+    <string name="help">Help</string>
+    <string name="authors">Authors:</string>
+    <string name="thanks_to">Thanks to:</string>
+    <string name="title_activity_random">ActivityRandom</string>
+    <string name="rate_text">Rate Value</string>
+    <string name="mass_text">Mass Value</string>
+    <string name="calibration_factor">Calibration Factor</string>
+    <string name="raw_measure">Raw Measure</string>
+    <string name="true_value">True Value</string>
+    <string name="enter">Enter</string>
+    <string name="confirm">Confirm</string>
+</resources>

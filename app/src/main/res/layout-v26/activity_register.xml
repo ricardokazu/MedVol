@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Start.ActivityRegister">
+
+    <EditText
+        android:id="@+id/Register_Email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="@string/email_text"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:importantForAutofill="no"
+        tools:targetApi="o" />
+
+    <EditText
+        android:id="@+id/Register_Password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/password_text"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/Register_Email"
+        app:layout_constraintStart_toStartOf="@+id/Register_Email"
+        app:layout_constraintTop_toBottomOf="@+id/Register_Email"
+        android:importantForAutofill="no"
+        tools:targetApi="o" />
+
+    <EditText
+        android:id="@+id/Register_Password_Confirm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/confirm_password_text"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/Register_Password"
+        app:layout_constraintStart_toStartOf="@+id/Register_Password"
+        app:layout_constraintTop_toBottomOf="@+id/Register_Password"
+        android:importantForAutofill="no"
+        tools:targetApi="o" />
+
+    <Button
+        android:id="@+id/Register_Button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/register_text"
+        app:layout_constraintEnd_toEndOf="@+id/Register_Password_Confirm"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/Register_Password_Confirm"
+        app:layout_constraintTop_toBottomOf="@+id/Register_Access_Code" />
+
+    <EditText
+        android:id="@+id/Register_Access_Code"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/access_code_text"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/Register_Password_Confirm"
+        app:layout_constraintStart_toStartOf="@+id/Register_Password_Confirm"
+        app:layout_constraintTop_toBottomOf="@+id/Register_Password_Confirm"
+        android:importantForAutofill="no" />
+</android.support.constraint.ConstraintLayout>

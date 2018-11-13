@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".List.ActivityItemInfo">
+
+    <TextView
+        android:id="@+id/Info_Name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Info_id_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/id_text"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="@+id/Info_Name"
+        app:layout_constraintTop_toBottomOf="@+id/Info_Name" />
+
+    <TextView
+        android:id="@+id/Info_id"
+        android:layout_width="0dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="24dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Info_id_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/Info_device_text" />
+
+    <TextView
+        android:id="@+id/Info_device_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/device_text"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/Info_id_text"
+        app:layout_constraintTop_toBottomOf="@+id/Info_id_text" />
+
+    <TextView
+        android:id="@+id/Info_device"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Info_device_text"
+        app:layout_constraintEnd_toEndOf="@+id/Info_id"
+        app:layout_constraintStart_toEndOf="@+id/Info_device_text" />
+
+    <TextView
+        android:id="@+id/Info_Rate_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/rate_text"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Info_Mass_text"
+        app:layout_constraintEnd_toEndOf="@+id/Info_device" />
+
+    <TextView
+        android:id="@+id/Info_Rate_Value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rate_text"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Info_Mass_value"
+        app:layout_constraintEnd_toEndOf="@+id/Info_Rate_text"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="@+id/Info_Rate_text" />
+
+
+    <TextView
+        android:id="@+id/Info_Mass_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/mass_text"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/Info_device_text"
+        app:layout_constraintTop_toBottomOf="@+id/Info_device_text" />
+
+    <TextView
+        android:id="@+id/Info_Mass_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/mass_text"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/Info_Mass_text"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Info_Mass_text"
+        app:layout_constraintTop_toBottomOf="@+id/Info_Mass_text" />
+
+    <Button
+        android:id="@+id/Info_graphics_button"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/graph_text"
+        app:layout_constraintEnd_toEndOf="@+id/Info_Rate_text"
+        app:layout_constraintHorizontal_bias="0.451"
+        app:layout_constraintStart_toStartOf="@+id/Info_Mass_text"
+        app:layout_constraintTop_toBottomOf="@+id/Info_Rate_Value" />
+</android.support.constraint.ConstraintLayout>

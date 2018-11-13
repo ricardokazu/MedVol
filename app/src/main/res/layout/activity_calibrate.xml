@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".List.ActivityCalibrate">
+
+    <TextView
+        android:id="@+id/Calibrate_Name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Calibrate_id_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/id_text"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="@+id/Calibrate_Name"
+        app:layout_constraintTop_toBottomOf="@+id/Calibrate_Name" />
+
+    <TextView
+        android:id="@+id/Calibrate_id"
+        android:layout_width="0dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="24dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Calibrate_id_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/Calibrate_device_text" />
+
+    <TextView
+        android:id="@+id/Calibrate_device_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/device_text"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/Calibrate_id_text"
+        app:layout_constraintTop_toBottomOf="@+id/Calibrate_id_text" />
+
+    <TextView
+        android:id="@+id/Calibrate_device"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Calibrate_device_text"
+        app:layout_constraintEnd_toEndOf="@+id/Calibrate_id"
+        app:layout_constraintStart_toEndOf="@+id/Calibrate_device_text" />
+
+    <TextView
+        android:id="@+id/Calibrate_Calibration_Factor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/calibration_factor"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Calibrate_Raw_Measure"
+        app:layout_constraintEnd_toEndOf="@+id/Calibrate_device" />
+
+    <TextView
+        android:id="@+id/Calibrate_CF_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="3dp"
+        android:text="@string/calibration_factor"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Calibrate_RM_value"
+        app:layout_constraintEnd_toEndOf="@+id/Calibrate_Calibration_Factor"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="@+id/Calibrate_Calibration_Factor" />
+
+
+    <TextView
+        android:id="@+id/Calibrate_Raw_Measure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/raw_measure"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/Calibrate_device_text"
+        app:layout_constraintTop_toBottomOf="@+id/Calibrate_device_text" />
+
+    <TextView
+        android:id="@+id/Calibrate_RM_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/raw_measure"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/Calibrate_Raw_Measure"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Calibrate_Raw_Measure"
+        app:layout_constraintTop_toBottomOf="@+id/Calibrate_Raw_Measure" />
+
+    <TextView
+        android:id="@+id/Calibrate_True_Value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/true_value"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/Calibrate_device_text"
+        app:layout_constraintTop_toBottomOf="@+id/Calibrate_RM_value" />
+
+    <EditText
+        android:id="@+id/Calibrate_TV_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="@string/true_value"
+        android:inputType="number|numberSigned|numberDecimal"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Calibrate_True_Value"
+        app:layout_constraintEnd_toEndOf="@+id/Calibrate_device"
+        app:layout_constraintStart_toEndOf="@+id/Calibrate_True_Value" />
+
+    <Button
+        android:id="@+id/Calibrate_Enter_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/enter"
+        android:background="#e8f1f1"
+        app:layout_constraintEnd_toEndOf="@+id/Calibrate_TV_value"
+        app:layout_constraintStart_toStartOf="@+id/Calibrate_True_Value"
+        app:layout_constraintTop_toBottomOf="@+id/Calibrate_TV_value" />
+
+</android.support.constraint.ConstraintLayout>

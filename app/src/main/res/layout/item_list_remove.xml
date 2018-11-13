@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="120dp">
+
+    <TextView
+        android:id="@+id/item_rem_list_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/name_text"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/item_rem_text"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/item_rem_list_ID"
+        android:layout_width="100dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/id_text"
+        app:layout_constraintEnd_toStartOf="@+id/item_rem_list_ID_info"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/item_rem_list_name"
+        app:layout_constraintTop_toBottomOf="@+id/item_rem_list_name" />
+
+    <TextView
+        android:id="@+id/item_rem_list_ID_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/normal_id_text"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/item_rem_list_ID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/item_rem_list_ID" />
+
+    <TextView
+        android:id="@+id/item_rem_list_device"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/device_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/item_rem_list_device_info"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/item_rem_list_ID"
+        app:layout_constraintTop_toBottomOf="@+id/item_rem_list_ID_info" />
+
+    <TextView
+        android:id="@+id/item_rem_list_device_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/normal_device_text"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/item_rem_list_device"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/item_rem_list_device" />
+
+    <TextView
+        android:id="@+id/item_rem_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/remove"
+        android:textColor="@android:color/holo_red_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

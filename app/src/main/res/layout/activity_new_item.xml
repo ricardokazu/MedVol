@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".List.ActivityNewItem">
+
+    <EditText
+        android:id="@+id/Item_Name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="@string/name_text"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:targetApi="o" />
+
+    <EditText
+        android:id="@+id/Item_ID_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/identification_text"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/Item_Name"
+        app:layout_constraintTop_toBottomOf="@+id/Item_Name"
+        tools:targetApi="o" />
+
+    <EditText
+        android:id="@+id/Item_Device_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/device_text"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/Item_ID_info"
+        app:layout_constraintStart_toStartOf="@+id/Item_ID_info"
+        app:layout_constraintTop_toBottomOf="@+id/Item_ID_info"
+        tools:targetApi="o" />
+
+    <TextView
+        android:id="@+id/Item_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/id_text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Item_ID_info"
+        app:layout_constraintEnd_toStartOf="@+id/Item_ID_info"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/Item_Device"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/device_text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Item_Device_info"
+        app:layout_constraintEnd_toEndOf="@+id/Item_ID"
+        app:layout_constraintStart_toStartOf="@+id/Item_ID" />
+
+    <Button
+        android:id="@+id/Item_next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/next_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/Item_Calibration_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calibration_factor"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Item_Calibration_Factor"
+        app:layout_constraintEnd_toEndOf="@+id/Item_Device"
+        app:layout_constraintStart_toStartOf="@+id/Item_Device" />
+
+    <EditText
+        android:id="@+id/Item_Calibration_Factor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/calibration_factor"
+        android:inputType="textPersonName"
+        android:text="@string/number_1"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/Item_Device_info"
+        app:layout_constraintStart_toStartOf="@+id/Item_Device_info"
+        app:layout_constraintTop_toBottomOf="@+id/Item_Device_info" />
+
+</android.support.constraint.ConstraintLayout>

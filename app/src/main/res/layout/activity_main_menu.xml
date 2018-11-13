@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBack"
+    tools:context=".Menus.ActivityMainMenu">
+
+    <Button
+        android:id="@+id/Menu_List"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/draw_rounded"
+        android:text="@string/List_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Menu_Edit_Menu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/draw_rounded"
+        android:text="@string/edit_menu_text"
+        app:layout_constraintEnd_toEndOf="@+id/Menu_List"
+        app:layout_constraintStart_toStartOf="@+id/Menu_List"
+        app:layout_constraintTop_toBottomOf="@+id/Menu_List" />
+
+    <Button
+        android:id="@+id/Menu_general_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/draw_rounded"
+        android:text="@string/general_info"
+        app:layout_constraintEnd_toEndOf="@+id/Menu_Edit_Menu"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Menu_Edit_Menu"
+        app:layout_constraintTop_toBottomOf="@+id/Menu_Edit_Menu" />
+
+    <Button
+        android:id="@+id/Menu_help"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/draw_rounded"
+        android:text="@string/help"
+        app:layout_constraintEnd_toEndOf="@+id/Menu_general_info"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Menu_general_info"
+        app:layout_constraintTop_toBottomOf="@+id/Menu_general_info" />
+
+    <Button
+        android:id="@+id/Menu_credits_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/draw_rounded"
+        android:text="@string/credits"
+        app:layout_constraintEnd_toEndOf="@+id/Menu_help"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Menu_help"
+        app:layout_constraintTop_toBottomOf="@+id/Menu_help" />
+
+</android.support.constraint.ConstraintLayout>
